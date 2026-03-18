@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>Nodo de Aprendizaje 2026</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <!-- Top Navigation Bar -->
+    <nav
+        class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <img src="./assets/logo-uees.png" alt="Logo UEES" class="h-12 w-auto object-contain">
+                    <span class="text-xl font-bold tracking-tight text-primary mt-1">Nodo 2026</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#inicio">Inicio</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">Nosotros</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors"
+                        href="#categorias">Categorías</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#agenda">Agenda</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors"
+                        href="#participar">Participar</a>
+                    <a href="https://forms.gle/DEeQkAWw1x5Sxx2a8" target="_blank"
+                        class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-md inline-block">
+                        Postular
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative py-16 lg:py-24 overflow-hidden" id="inicio">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+                        <span class="material-symbols-outlined text-lg">event_upcoming</span>
+                        11 de Mayo, 2026
+                    </div>
+                    <h1
+                        class="text-4xl lg:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+                        Nodo de Aprendizaje: Sistematización de <span class="text-primary">Experiencias Docentes</span>
+                        Innovadoras
+                    </h1>
+                    <p class="text-xl text-slate-600 dark:text-slate-400">
+                        De la práctica aislada a la comunidad de aprendizaje. Un espacio para visibilizar el talento
+                        pedagógico.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://forms.gle/DEeQkAWw1x5Sxx2a8" target="_blank"
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform shadow-xl shadow-primary/20 text-center">
+                            Postula tu Experiencia Innovadora
+                        </a>
+                        <a href="#agenda"
+                            class="bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center inline-block">
+                            Ver Agenda
+                        </a>
+                    </div>
+                    <div
+                        class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-200 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Hora</p>
+                            <p class="font-bold">8:00 AM</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Lugar</p>
+                            <p class="font-bold">Aula Magna</p>
+                        </div>
+                        <div class="hidden sm:block">
+                            <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Modalidad</p>
+                            <p class="font-bold">Presencial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800"
+                        data-alt="Docentes colaborando en un aula moderna de aprendizaje"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCh6uzdsKB2GpzogTR5A1vYEssTz_NlxDPV1X4k6MMz8XSdinibWHjjkVnbYmucNj0a8GuOdB-hBaDKphq1Ft14OE5oDcuBXRfWpmyNoyVx7oh94F2yQrp9WGHSgWEPmEFcAkqV1v26WbY2RP_B-P9G5CXp-b6NQ93a_mGmhWhBmRDcCTW5YfcGxecC0LP2uILEKR6exU_A1XuQA18FeuFM_bHwwXm13ZgVdPPQzVKoT6Xt3tnFngSHtvpSOaSBs592I2LQ2xsebvfv'); background-size: cover;">
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl max-w-xs border border-slate-100 dark:border-slate-700">
+                        <p class="text-sm font-medium text-slate-500 italic">"Transformar experiencias en conocimiento
+                            institucional"</p>
+                        <div class="mt-3 flex items-center gap-3">
+                            <div class="flex -space-x-2">
+                                <div class="size-8 rounded-full border-2 border-white bg-primary"></div>
+                                <div class="size-8 rounded-full border-2 border-white bg-slate-400"></div>
+                                <div class="size-8 rounded-full border-2 border-white bg-slate-600"></div>
+                            </div>
+                            <span class="text-sm font-bold text-slate-700 dark:text-slate-300">+5 Ponentes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Section (DESCRIPCIÓN) -->
+    <section class="py-20 bg-white dark:bg-slate-900/50" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-12">
+                    <h2
+                        class="text-3xl lg:text-4xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-primary dark:from-white dark:to-primary">
+                        El Propósito del Nodo de Aprendizaje</h2>
+                    <div
+                        class="prose prose-slate dark:prose-invert max-w-none text-lg text-slate-600 dark:text-slate-300 leading-relaxed space-y-6">
+                        <p>
+                            El Nodo de Aprendizaje Institucional es una iniciativa estratégica que nace como respuesta
+                            al compromiso de nuestra institución con la excelencia académica, la innovación pedagógica y
+                            la mejora continua. Concebido como un espacio sistemático de encuentro, diálogo profesional
+                            y construcción colectiva de conocimiento, donde se promueve una cultura docente colaborativa
+                            donde las buenas prácticas dejan de ser experiencias aisladas para convertirse en
+                            conocimiento compartido e institucionalizado.
+                        </p>
+                        <p>
+                            Inspirado en el enfoque de <strong>Comunidades de Aprendizaje</strong>, este Nodo reconoce
+                            que la transformación educativa no ocurre de manera individual, sino mediante procesos
+                            colectivos de reflexión crítica, intercambio de experiencias y aprendizaje entre pares. En
+                            este sentido, convoca a docentes que se distinguen por su liderazgo pedagógico, creatividad
+                            metodológica y compromiso con el impacto formativo en sus estudiantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-primary/5 rounded-[2rem] p-8 lg:p-12 border border-primary/10">
+                        <h3 class="text-xl font-bold mb-6 text-primary flex items-center gap-2">
+                            <span class="material-symbols-outlined">rocket_launch</span>
+                            Necesidad Institucional
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-8">
+                            Más que un evento académico, el Nodo es el punto de partida para consolidar una red
+                            permanente de innovación. Su implementación responde a la necesidad de:
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <span>Sistematizar y visibilizar prácticas pedagógicas exitosas.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <span>Promover la transferencia de metodologías innovadoras entre áreas
+                                    disciplinares.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <span>Fortalecer la identidad profesional docente.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <span>Impulsar procesos de actualización alineados con las tendencias
+                                    contemporáneas.</span>
+                            </li>
+                        </ul>
+                        <p class="mt-8 text-slate-600 dark:text-slate-400 italic">
+                            Representa una apuesta estratégica por una educación transformadora, donde cada docente se
+                            reconoce como agente de cambio y cada experiencia innovadora se convierte en patrimonio
+                            pedagógico compartido.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex flex-col h-full">
+                    <div
+                        class="flex-1 p-8 lg:p-12 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 flex flex-col justify-center">
+                        <span class="material-symbols-outlined text-5xl text-primary mb-6">forum</span>
+                        <h4 class="font-bold text-2xl mb-4">Crecimiento Profesional</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                            Ofrece reconocimiento, visibilidad y oportunidades dentro de un entorno de confianza y
+                            diálogo horizontal, donde cada docente se reconoce como agente de cambio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-20" id="categorias">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16 mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Postula tus experiencias en base a estas 6 categorías</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">
+                    El Nodo de Aprendizaje se organiza en seis categorías estratégicas que responden a las prioridades
+                    institucionales de innovación, calidad académica y compromiso social. Cada categoría busca
+                    visibilizar prácticas docentes transformadoras, con impacto comprobable y potencial de transferencia
+                    a otros contextos educativos.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cat 1 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">quiz</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Experiencias
+                        Didáctica y
+                        Evaluación</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Reconoce experiencias innovadoras orientadas a mejorar los procesos de enseñanza y evaluación
+                        desde un enfoque centrado en el aprendizaje significativo.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> Evaluación auténtica y formativa</li>
+                            <li class="flex gap-2"><span>•</span> Retroalimentación efectiva</li>
+                            <li class="flex gap-2"><span>•</span> Diseño de actividades para pensamiento crítico</li>
+                            <li class="flex gap-2"><span>•</span> Instrumentos innovadores de medición</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cat 2 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">science</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Metodología STEM
+                    </h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Implementación de enfoques interdisciplinarios basados en Ciencia, Tecnología, Ingeniería y
+                        Matemática (STEM), promoviendo la resolución de problemas reales.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> Aprendizaje basado en proyectos (ABP)</li>
+                            <li class="flex gap-2"><span>•</span> Aprendizaje basado en problemas y retos</li>
+                            <li class="flex gap-2"><span>•</span> Pensamiento computacional</li>
+                            <li class="flex gap-2"><span>•</span> Cultura maker y prototipado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cat 3 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">psychiatry</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Integración
+                        pedagógica de tecnología</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Reconoce prácticas que integran la tecnología de manera intencional y estratégica para potenciar
+                        el aprendizaje y los procesos educativos.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> IA aplicada a la educación</li>
+                            <li class="flex gap-2"><span>•</span> Entornos virtuales de aprendizaje</li>
+                            <li class="flex gap-2"><span>•</span> Recursos interactivos y multimedia</li>
+                            <li class="flex gap-2"><span>•</span> Evaluaciones y plataformas digitales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cat 4 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">public</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Sostenibilidad y
+                        Vinculación Social</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Destaca iniciativas que conectan el aprendizaje con la realidad social, ambiental y comunitaria,
+                        promoviendo responsabilidad ciudadana.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> Proyectos de impacto comunitario</li>
+                            <li class="flex gap-2"><span>•</span> Aprendizaje-servicio</li>
+                            <li class="flex gap-2"><span>•</span> Educación ambiental y ciudadanía global</li>
+                            <li class="flex gap-2"><span>•</span> Compromiso ético social</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cat 5 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">design_services</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Diseño Estratégico
+                        de Recursos</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Reconoce la creación de materiales educativos innovadores, contextualizados y alineados con
+                        competencias de aprendizaje claras.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> Secuencias didácticas 50-30-20</li>
+                            <li class="flex gap-2"><span>•</span> Guías didácticas estructuradas</li>
+                            <li class="flex gap-2"><span>•</span> Material manipulativo y recursos digitales</li>
+                            <li class="flex gap-2"><span>•</span> Recursos alineados con competencias</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cat 6 -->
+                <div
+                    class="group bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div
+                        class="size-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">model_training</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 leading-tight text-slate-900 dark:text-white">Modelos de
+                        Aprendizaje 50-30-20 / 70-20-10</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Reconoce experiencias docentes que integran modelos de aprendizaje promoviendo el desarrollo de
+                        competencias a través de experiencias prácticas, interacción social y procesos formativos
+                        estructurados.
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-700/50">
+                        <p class="text-[10px] font-bold text-primary uppercase tracking-widest mb-3">Prácticas Incluidas
+                        </p>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span>•</span> Take Away</li>
+                            <li class="flex gap-2"><span>•</span> Mapa de aprendizaje</li>
+                            <li class="flex gap-2"><span>•</span> Metodología UPPEE</li>
+                            <li class="flex gap-2"><span>•</span> Microaprendizajes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section class="py-20 bg-slate-900 text-white" id="agenda">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Agenda del Evento</h2>
+                    <p class="text-slate-400">Cronograma de actividades para el Lunes 11 de mayo de 2026.</p>
+                </div>
+                <div class="flex flex-col items-end gap-2 text-sm">
+                    <div class="bg-primary/20 border border-primary/30 px-4 py-2 rounded-lg">
+                        <span class="text-primary font-bold">Lugar:</span> Aula Magna "Lic. Adiel Hernández Galdámez"
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg flex items-center gap-4">
+                        <span><span class="text-slate-400 font-bold">Hora:</span> 8:30 am</span>
+                        <span class="border-l border-slate-600 pl-4"><span
+                                class="text-slate-400 font-bold">Modalidad:</span> Presencial</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+
+                <!-- Item 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">how_to_reg</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">8:45 am - 9:00 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Registro</div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">flag</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">9:00 am - 9:02 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Apertura del evento</div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">history_edu</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">9:02 am - 9:16 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Actos protocolarios</div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">mic</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">9:17 am - 9:57 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Conferencia</div>
+                        <p class="text-slate-400 text-sm mt-2">"Innovación pedagógica con impacto: de la práctica
+                            aislada a la comunidad de aprendizaje"</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">question_answer</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">9:57 am - 10:00 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Espacio de preguntas y diálogo</div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">lightbulb</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">10:00 am - 11:00 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Presentación de los Pitch Pedagógicos</div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">group_work</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">11:01 am - 11:45 am</div>
+                        <div class="text-slate-100 font-bold text-lg mb-2">Trabajo colaborativo</div>
+                        <div class="text-slate-400 text-sm space-y-1">
+                            <p class="text-slate-300">Dinámica: "Escalar la innovación"</p>
+                            <p>• ¿Qué práctica podría implementarse institucional?</p>
+                            <p>• ¿Qué necesitaríamos para replicarla?</p>
+                            <p>• ¿Qué práctica podría aplicar de forma interdisciplinar?</p>
+                            <p class="text-slate-300 font-medium pt-1">Socialización rápida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">11:45 am - 11:50 am</div>
+                        <div class="text-slate-100 font-bold text-lg">Entrega de reconocimientos</div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <span class="material-symbols-outlined text-sm">qr_code_2</span>
+                    </div>
+                    <div
+                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-slate-800 bg-slate-800/50">
+                        <div class="font-bold text-primary mb-1">11:50 am - 12:00 md</div>
+                        <div class="text-slate-100 font-bold text-lg">Cierre y evaluación QR</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How to Participate -->
+    <section class="py-20" id="participar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 italic text-slate-800 dark:text-white">Criterios de Participación
+                    </h2>
+                    <div class="space-y-6">
+                        <div
+                            class="flex gap-4 p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                            <div
+                                class="shrink-0 size-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                                <span class="material-symbols-outlined">description</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Ficha Técnica</h4>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Debe incluir
+                                    objetivos claros, metodología aplicada, evidencias verificables y un proceso de
+                                    reflexión pedagógica.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex gap-4 p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                            <div
+                                class="shrink-0 size-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                                <span class="material-symbols-outlined">analytics</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-3">Valoración (<a href="#evaluacion"
+                                        class="text-primary underline hover:text-primary/80 transition-colors">Ver
+                                        Sistema de 36 pts</a>)</h4>
+                                <ul class="text-[13px] text-slate-600 dark:text-slate-400 space-y-2">
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Claridad de
+                                        objetivos y competencias</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Coherencia
+                                        pedagógica</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Nivel de
+                                        innovación pedagógica</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Diseño
+                                        metodológico</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Evidencia de
+                                        implementación</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Impacto en el
+                                        aprendizaje</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Transferibilidad
+                                        / replicabilidad</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Proyección y
+                                        sostenibilidad</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>Reflexión
+                                        docente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary p-8 lg:p-12 rounded-[2rem] text-white">
+                    <h2 class="text-2xl font-bold mb-8">Línea de Tiempo 2026</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="text-[11px] font-black leading-none text-white/50 w-16 pt-1 shrink-0">06-26 ABR
+                            </div>
+                            <div class="pb-4 w-full border-b border-primary-800">
+                                <h4 class="font-bold text-sm">Convocatoria y Postulaciones</h4>
+                                <p class="text-primary-100 text-xs mt-1">Apertura y recepción de fichas técnicas. El
+                                    cierre oficial de postulaciones es el 26 de abril.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="text-[11px] font-black leading-none text-white/50 w-16 pt-1 shrink-0">MAY</div>
+                            <div class="pb-4 w-full">
+                                <h4 class="font-bold text-sm">Evaluación y Selección</h4>
+                                <p class="text-primary-100 text-xs mt-1">El Comité evaluará las propuestas y notificará
+                                    a los participantes seleccionados.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center bg-white/10 p-4 rounded-xl -mx-4 border border-white/20">
+                            <div class="text-2xl font-black text-white w-14 text-center shrink-0 leading-none">
+                                11<br><span class="text-[10px] uppercase font-bold text-white/60">MAY</span></div>
+                            <div class="w-full">
+                                <h4 class="font-bold text-lg">Ejecución del Nodo</h4>
+                                <p class="text-primary-100 text-xs mt-0.5 font-medium">Evento presencial y presentación
+                                    de Pitch Pedagógicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full mt-10 bg-white text-primary font-black py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-lg">
+                        DESCARGAR BASES COMPLETAS
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Section -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/50" id="evaluacion">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-3xl font-bold mb-4">Sistema de Evaluación</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">
+                    Conoce la escala de valoración y los criterios bajo los cuales se evaluarán las fichas técnicas y
+                    propuestas de innovación docente.
+                </p>
+            </div>
+
+            <div
+                class="overflow-x-auto bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 mb-12">
+                <table class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="bg-slate-100 dark:bg-slate-700/50">
+                            <th
+                                class="p-6 font-bold text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 w-1/4">
+                                Criterios</th>
+                            <th
+                                class="p-6 font-bold text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 w-1/2">
+                                Descripción</th>
+                            <th class="p-4 font-bold text-center text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 text-xs"
+                                title="Insuficiente">I</th>
+                            <th class="p-4 font-bold text-center text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 text-xs"
+                                title="Deficiente">D</th>
+                            <th class="p-4 font-bold text-center text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 text-xs"
+                                title="Bueno">B</th>
+                            <th class="p-4 font-bold text-center text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 text-xs"
+                                title="Muy Bueno">MB</th>
+                            <th class="p-4 font-bold text-center text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700 text-xs"
+                                title="Excelente">E</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 dark:divide-slate-700/50 text-sm">
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Claridad de los objetivos y
+                                competencias</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">Los objetivos y competencias están
+                                claramente definidos y alineados con la innovación propuesta.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Coherencia pedagógica de la
+                                propuesta</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">Existe coherencia entre objetivos,
+                                metodología, actividades, recursos y roles definidos en la experiencia.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Nivel de innovación
+                                pedagógica</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">La experiencia presenta estrategias o
+                                enfoques novedosos en relación con las prácticas tradicionales.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Diseño metodológico de la
+                                experiencia</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">La implementación paso a paso es clara,
+                                organizada y viable en el contexto educativo.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Evidencia de implementación
+                            </td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">Se presentan evidencias claras del
+                                desarrollo de la experiencia (instrumentos, productos, recursos, etc.).</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Impacto en el aprendizaje
+                            </td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">La experiencia evidencia contribución al
+                                desarrollo de competencias, participación o mejora en el aprendizaje.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Transferibilidad /
+                                replicabilidad</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">La experiencia puede ser adaptada a otras
+                                asignaturas, programas o contextos educativos.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Proyección y sostenibilidad
+                            </td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">La propuesta demuestra posibilidades de
+                                mejora, continuidad o escalabilidad institucional.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td class="p-6 font-semibold text-slate-900 dark:text-slate-300">Reflexión docente</td>
+                            <td class="p-6 text-slate-600 dark:text-slate-400">El docente evidencia análisis crítico
+                                sobre su práctica, aprendizajes obtenidos y oportunidades de mejora.</td>
+                            <td class="text-center font-mono">0</td>
+                            <td class="text-center font-mono">1</td>
+                            <td class="text-center font-mono">2</td>
+                            <td class="text-center font-mono">3</td>
+                            <td class="text-center font-mono">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Escala de Niveles -->
+                <div
+                    class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h3 class="font-bold text-xl mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
+                        <span class="material-symbols-outlined text-primary">monitoring</span>
+                        Niveles de Resultado
+                    </h3>
+                    <ul class="space-y-4">
+                        <li
+                            class="flex justify-between items-center p-3 rounded-xl bg-primary/10 border border-primary/20">
+                            <span class="font-bold text-primary">28 - 36 pts</span>
+                            <span class="font-semibold text-sm text-slate-900 dark:text-white">Experiencia altamente
+                                innovadora</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center p-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-700 dark:text-slate-300">19 - 27 pts</span>
+                            <span class="font-medium text-sm text-slate-600 dark:text-slate-300">Experiencia
+                                innovadora</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center p-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-700 dark:text-slate-300">10 - 18 pts</span>
+                            <span class="font-medium text-sm text-slate-600 dark:text-slate-300">Experiencia con
+                                potencial</span>
+                        </li>
+                        <li
+                            class="flex justify-between items-center p-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-700 dark:text-slate-300">0 - 9 pts</span>
+                            <span class="font-medium text-sm text-slate-600 dark:text-slate-300">Requiere mayor
+                                desarrollo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Desempeño Escala -->
+                <div
+                    class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h3 class="font-bold text-xl mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
+                        <span class="material-symbols-outlined text-primary">fact_check</span>
+                        Escala de Desempeño
+                    </h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex flex-col gap-1 pb-3 border-b border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                <span
+                                    class="w-6 text-center font-mono text-xs bg-slate-200 dark:bg-slate-700 rounded-sm">E</span>
+                                Excelente (4)
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 pl-8">Cumple plenamente el criterio con
+                                evidencia clara y sólida</span>
+                        </div>
+                        <div class="flex flex-col gap-1 pb-3 border-b border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                                <span
+                                    class="w-6 text-center font-mono text-xs bg-slate-200 dark:bg-slate-700 rounded-sm">MB</span>
+                                Muy Bueno (3)
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 pl-8">Cumple el criterio con evidencia
+                                suficiente</span>
+                        </div>
+                        <div class="flex flex-col gap-1 pb-3 border-b border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                                <span
+                                    class="w-6 text-center font-mono text-xs bg-slate-200 dark:bg-slate-700 rounded-sm">B</span>
+                                Bueno (2)
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 pl-8">Cumple parcialmente el criterio</span>
+                        </div>
+                        <div class="flex flex-col gap-1 pb-3 border-b border-slate-100 dark:border-slate-700">
+                            <span class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                                <span
+                                    class="w-6 text-center font-mono text-xs bg-slate-200 dark:bg-slate-700 rounded-sm">D</span>
+                                Deficiente (1)
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 pl-8">Evidencia limitada</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                                <span
+                                    class="w-6 text-center font-mono text-xs bg-slate-200 dark:bg-slate-700 rounded-sm">I</span>
+                                Insuficiente (0)
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 pl-8">El criterio no está presente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="./assets/logo-uees.png" alt="Logo UEES" class="h-14 w-auto object-contain">
+                        <span class="text-xl font-bold tracking-tight mt-1">Nodo de Aprendizaje 2026</span>
+                    </div>
+                    <p class="text-slate-500 max-w-sm">
+                        Sistematizando la innovación para construir el futuro de la educación superior. Un espacio de y
+                        para docentes.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Contacto</h5>
+                    <ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            <a href="mailto:adrian.martinez@uees.edu.sv"
+                                class="hover:text-primary transition-colors">adrian.martinez@uees.edu.sv</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                            <a href="https://wa.me/50368564793" target="_blank"
+                                class="hover:text-primary transition-colors">WhatsApp: +503 6856-4793</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Redes Sociales</h5>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-600 dark:text-slate-300"
+                            href="https://www.linkedin.com/in/adrian-serranosv" target="_blank" title="LinkedIn">
+                            <span class="font-bold text-lg leading-none mt-0.5">in</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+                <div
+                    class="flex flex-wrap justify-center gap-4 md:gap-8 mb-6 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    <!-- Logos Texts -->
+                    <div
+                        class="px-4 py-2 bg-slate-200 dark:bg-slate-800 rounded-lg flex items-center justify-center text-xs font-bold text-slate-700 dark:text-slate-300">
+                        Universidad Evangélica de El Salvador
+                    </div>
+                    <div
+                        class="px-4 py-2 bg-slate-200 dark:bg-slate-800 rounded-lg flex items-center justify-center text-xs font-bold text-slate-700 dark:text-slate-300">
+                        Vicerrectoría de Innovación y Tecnología
+                    </div>
+                    <div
+                        class="px-4 py-2 bg-slate-200 dark:bg-slate-800 rounded-lg flex items-center justify-center text-xs font-bold text-slate-700 dark:text-slate-300">
+                        Centro de Enseñanza y Aprendizaje
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400">© 2026 Nodo de Aprendizaje. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
